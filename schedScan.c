@@ -150,4 +150,5 @@ void scheduler_stats() {
 	printf("  Maximum Queue size = %d\n",maxQsize);
 	printf("  Unprocessed Queue entries = %d\n",qSize);
 	printf("  Number of times the direction changed = %d\n",nChngDir);
+  while (qHead) removeRequest(qHead);
 }
